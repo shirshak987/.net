@@ -1,0 +1,19 @@
+﻿
+@model EMS.Models.SetupDepartmentViewModel
+
+<h1>Enter Employee Details!!!</h1>
+<form asp-controller="SetupDepartment" asp-action="DepCreate">
+<div class="row">
+	<div class="col-sm-6">
+		<label>Department Name:</label>
+		<input asp-for="DepartmentName" class="form-control">
+	</div>
+	<div class="col-sm-6">
+		<label>Dispaly Order:</label>
+		<input asp-for="Display" class="form-control">
+	</div>
+	<div>
+		<input type="submit" class="btn btn-primary mt-2" />
+	</div>
+</div>
+</form>
